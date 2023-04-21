@@ -13,5 +13,10 @@
 	4! = 4 × 3 × 2 × 1 = 24
 	5! = 5 × 4 × 3 × 2 × 1 = 120
 */
-
-const factorial = n => { }
+function factorielle(n) {
+	if (n === 0) {
+	  return 1;
+	} else {
+	  return n * factorielle(n-1);
+	}
+  }
